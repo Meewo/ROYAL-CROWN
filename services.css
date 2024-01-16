@@ -1,0 +1,101 @@
+/* IN THIS HERO THE BACKGROUND IMAGE IS MODIFIED */
+
+/* SECOND-HEADER */
+.second-header-links :nth-child(1){
+    padding: 8px 20px;
+}
+
+.about-hero{
+    margin-top: 100px;
+    height: 450px;
+    background: url(royal\ crown\ 1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+.service-explain{
+    width: 90%;
+    margin: 50px auto 100px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.rcc-services{
+    font-weight: bold;
+}
+
+
+/* DESIGN SECTION */
+.design-container h2{
+    padding: 100px 0 0 50px;
+}
+.design-container hr{
+    width: 200px;
+    padding: 1px;
+    border: none;
+    margin: 0 0 20px 50px;
+}
+.design{
+    display: flex;
+    padding: 0 50px 100px;
+}
+.design-text p{
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+}
+.design-img img{
+    width: 400px;
+}
+
+
+/* ERECTION SECTION */
+.erection-heading{
+    padding: 100px 0 20px;
+    margin-left: 500px;
+}
+.erection-heading hr{
+    width: 200px;
+    padding: 1px;
+    border: none;
+}
+.erection{
+    display: flex;
+    flex-flow: row-reverse;
+    padding: 0 50px 100px;
+}
+.erection-text {
+    margin-left: 20px;
+}
+.erection-text p{
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    text-align: justify;
+}
+.erection-img img{
+    width: 400px;
+}
+
+
+/* PRODUCTION SECTION */
+.production-container h2{
+    padding: 100px 0 0 50px;
+}
+.production-container hr{
+    width: 200px;
+    padding: 1px;
+    border: none;
+    margin: 0 0 20px 50px;
+}
+.production{
+    display: flex;
+    padding: 0 50px 100px;
+}
+.production-text p{
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+}
+.production-img img{
+    width: 400px;
+}

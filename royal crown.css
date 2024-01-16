@@ -1,0 +1,1716 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--body-color);
+}
+:root{
+    --body-color: #fff;
+    --top-color: blue;
+    --header-color: #fff;
+    --bluewhite-color: blue;
+    --whiteblue-color: #fff;
+    --blackwhite-color: #000000;
+    --join-color: #eff0f8;
+    --mission-color: rgb(225, 231, 240);
+    --servicebody-color: rgb(241, 241, 241);
+    --contactaddress-color: rgba(5, 14, 14, 0.3);
+}
+.dark-theme{
+    --body-color: #101127;
+    --top-color: #264949;
+    --header-color: #058686;
+    --bluewhite-color: #fff;
+    --whiteblue-color: #0000ff;
+    --blackwhite-color: #938fa1;
+    --join-color: #2f4f4f;
+    --mission-color: rgb(5, 28, 66);
+    --servicebody-color: #050622;
+    --contactaddress-color: rgba(0, 0, 0);
+}
+.first-header{
+    background-color: blue;
+    background-color: var(--top-color);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.first-header > h6{
+    position: relative;
+    left: 100px;
+    margin: auto 0;
+    color: white;
+    font-size: 0.8rem;
+}
+.contact-head{
+    position: absolute;
+    right: 100px;
+    top: 8px;
+}
+.contact-head > i{
+    color: #faf6d7;
+}
+.contact-head > :nth-child(2){
+    margin-right: 20px;
+}
+.contact-head > :last-child{
+    padding: 8px 12px;
+    background-color: var(--whiteblue-color);
+    color: var(--bluewhite-color);
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+.contact-head > :last-child:hover{
+    padding: 8px 11px;
+}
+.contact-head > :last-child > i{
+    margin-right: 10px;
+}
+.contact-head > :last-child > a{
+    text-decoration: none;
+    color: var(--bluewhite-color);
+}
+
+
+/* SECOND-HEADER */
+.second-header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--header-color);
+}
+.heads{
+    width: 100%;
+}
+.second-header-img{
+    display: flex;
+}
+.second-header-img > img{
+    height: 400px;
+    position: relative;
+    bottom: 140px;
+    left: 20%;
+}
+.second-header-text{
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: var(--bluewhite-color);
+    margin: 60px 0 0;
+    position: relative;
+    right: 15%;    
+}
+.second-header-links{
+    margin: auto 0;
+}
+.second-header-links > a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 25px;
+}
+.second-header-links > a:hover{
+    background-color: transparent;
+    color: var(--bluewhite-color);
+    border: 2px solid var(--bluewhite-color);
+}
+#icon{
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 150px;
+    top: 40px;
+}
+#icon:hover{
+    height: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE NAVIGATION BAR */
+.mainbox{
+    position: relative;
+    position: fixed;
+    z-index: 2;
+    display: none;
+}
+.mainbox .sidebar-menu{
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    left: -280px;
+    /* background-color: rgba(255,255,255,0.1); */
+    background: linear-gradient(rgb(119, 136, 153),rgb(1, 1, 82, 0.7), rgb(0, 139, 139));
+    box-shadow: 0 0 6px (rgb(119, 136, 153, 0.5),rgb(1, 1, 82, 0.5), rgb(0, 139, 139, 0.5));
+}
+.sidebar-menu .logo2{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+}
+.sidebar-menu .logo2 a{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    left: 50px;
+    line-height: 60px;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+}
+.sidebar-menu .menu{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.sidebar-menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+    transition: all 0.3s linear;
+}
+.sidebar-menu .menu i{
+    color: #fff;
+    font-size: 20px;
+    padding-right: 8px;
+}
+.sidebar-menu .menu a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.sidebar-menu .menu li :hover{
+    border-left: 1px solid #fff;
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+    border: 2px solid #fff;
+    /* border-bottom: 5px solid #fff; */
+}
+.sidebar-menu .social-media{
+    position: absolute;
+    left: 50%;
+    bottom: 400px;
+    transform: translateX(-50%);
+}
+.sidebar-menu .social-media i{
+    padding: 0 5px;
+    color: #fff;
+    opacity: 0.6;
+    font-size: 20px;
+    transition: all 0.2s linear;
+}
+.sidebar-menu .social-media i:hover{
+    opacity: 1;
+}
+.quote-button-mobile{
+    position: absolute;
+    left: 5%;
+    bottom: 350px;
+}
+.quote-button-mobile button{
+    padding: 8px 12px;
+    background-color: blue;
+}
+.quote-button-mobile button i{
+    color: white;
+    margin-right: 10px;
+}
+.quote-button-mobile button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.0625rem;
+    font-weight: bolder;
+}
+.quote-button-mobile img{
+    width: 40px;
+    position: relative;
+    top: 15px;
+}
+
+
+
+
+
+#check{
+    display: none;
+}
+.mainbox .btn-one i{
+    color: aqua;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s linear;
+    z-index: 2;
+}
+.sidebar-menu .btn-two i{
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 240px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.btn-one i:hover{
+    font-size: 29px;
+
+}
+.btn-two i:hover{
+    font-size: 24px;
+}
+#check:checked ~ .sidebar-menu{
+    left: 0;
+}#check:checked ~ .btn-one i{
+    opacity: 0;
+}
+#check:checked ~ .sidebar-menu .btn-two i{
+    opacity: 1;
+}
+.mobile-nav-img{
+    position: absolute;
+    right: 30px;
+    bottom: 500px;
+    z-index: 1;
+    display: none;
+}
+.mobile-nav-img img{
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HERO SLIDES */
+.banner{
+    height: 450px;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+#slideImg{
+    width: 100%;
+    height: 100%;
+    animation: zoom 3s linear infinite;
+}
+
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+    15%{
+        transform: scale(1);
+    }
+    85%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+.overlay1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    position: absolute;
+    top: 0;
+}
+.navbar{
+    width: 85%;
+    display: flex;
+    margin: 80px auto;
+    display: none;
+}
+.logo{
+    flex-basis: 15%;
+    cursor: pointer;
+}
+#nav-logo{
+    width: 200px;
+    position: absolute;
+    bottom: 320px;
+}
+.nav-menu{
+    flex: 1;
+    align-items: center;
+    text-align: right;
+}
+.nav-menu > a{
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    background-color: darkslategrey;
+    padding: 5px 8px;
+}
+.nav-menu > :last-child{
+    margin-right: 0;
+}
+
+.hero-contents{
+    width: 60%;
+    text-align: center;
+    margin: 160px auto 0;
+    color: #fff;
+}
+.hero-contents > h1{
+    font-size: 2.5rem;
+}
+.hero-contents > h3{
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+.hero-button > button{
+    width: 200px;
+    padding: 12px 0;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: blue;
+    border: 2px solid blue;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hero-button > button:hover{
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+
+
+/* AFTER SLIDE */
+.watchword{
+    width: 50%;
+    margin: 50px auto 0;
+    color: var(--bluewhite-color);
+    text-align: center;
+    font-weight: bold;
+}
+.watchword > p{
+    font-weight: bolder;
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+.watchword > hr{
+    height: 4px;
+    width: 25%;
+    margin: 10px auto 0;
+    background-color: var(--bluewhite-color);
+}
+
+
+/* TRIAD SECTION */
+.triad-container{
+    display: flex;
+    width: 75%;
+    margin: 50px auto 0;
+}
+.triads{
+    width: 100%;
+}
+.triads > img{
+    width: 300px;
+}
+.triads > h3{
+    color: var(--bluewhite-color);
+    line-height: 2;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.triads > p{
+    color: var(--blackwhite-color);
+    font-size: 0.93rem;
+    line-height: 1.4;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.rcc{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.triads > button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+
+/* PROJECT SECTION */
+.project-container{
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    background: url(royal\ crown\ 8.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.project{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.project > h4{
+    font-size: 1.56rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+.project > button{
+    background-color: blue;
+    border: none;
+    padding: 8px;
+    color: white;
+    margin-top: 10px;
+}
+.overlay2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+
+/* JOIN OUR TEAM SECTION */
+.join-container{
+    margin-top: 50px;
+    height: 280px;
+    background-color: var(--join-color);
+    position: relative;
+}
+.join{
+    width: 50%;
+    position: absolute;
+    left: 50px;
+    top: 25%;
+}
+.join > h5{
+    color: var(--bluewhite-color);
+    font-size: 1.56rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.join > p{
+    color: var(--blackwhite-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px 0;
+}
+.join > button{
+    background-color: blue;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+}
+
+
+
+
+/* CERTIFICATES SECTION */
+.certificates-container{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.certificates-container img{
+    height: 100px;
+}
+
+
+
+
+/* FOOTER SECTION */
+.footer-container{
+    height: 300px;
+    display: flex;
+    background-color: rgb(8, 24, 41);
+    padding: 50px 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.foots{
+    width: 100%;
+}
+.footer-info{
+    position: relative;
+    bottom:380px;
+}
+.footer-info > img{
+    width: 180px;
+    position: relative;
+    top: 220px;
+    left: 25%;
+}
+.footer-info > p{
+    position: relative;
+    top: 50px;
+    color: rgb(147, 143, 161);
+}
+
+.footer-contact{
+    margin-left: 50px;
+}
+.footer-contact > h3{
+    margin-bottom: 20px;
+    color: white;
+}
+.footer-contact > h6{
+    margin: 20px 0 5px;
+    color: rgb(188, 207, 224);
+}
+.footer-contact > p, .footer-contact > address{
+    color: rgb(147, 143, 161);
+}
+
+.sm-icons{
+    color: rgb(147, 143, 161);
+}
+.sm-icons > i{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.footer-nav > h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-nav > a{
+    text-decoration: none;
+    color: rgb(147, 143, 161);
+    line-height: 3;
+}
+.footer-nav > a:hover{
+    color: rgb(188, 207, 224);
+}
+#asap{
+    width: 40px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    cursor: pointer;
+}
+#asap:hover{
+    opacity: 0.8;
+    width: 39px;
+}
+.copyright{
+    height: 50px;
+    background: linear-gradient(rgb(147, 143, 161), rgb(8, 24, 41), rgb(8, 24, 41), rgb(147, 143, 161));
+    color: white;
+    color: rgb(147, 143, 161);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+}
+.copyright > h6{
+    margin: auto 10px;
+}
+.copyright > :last-child{
+    margin-right: 0;
+}
+#powered:link{
+    color: rgb(147, 143, 161);
+}
+#powered:visited{
+    color: darkkhaki;
+}
+#powered:hover{
+    text-decoration: none;
+    color: white;
+}
+#powered:active{
+    color: cyan;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+@media screen and (max-width:600px) {
+    body{
+        padding: 0 10px;
+    }
+    .first-header{
+        display: none;
+    }
+    .second-header{
+        display: none;
+    }
+    .banner{
+        width: 100%;
+        height: 100vh;
+        margin-top: 0;
+    }
+    #slideImg{
+        animation: none;
+    }
+    .mainbox{
+        display: block;
+    }
+    .mobile-nav-img{
+        display: block;
+    }
+
+
+    .hero-contents{
+        width: 100%;
+        margin: 500px auto 0;
+    }
+    .hero-contents{
+    width: 60%;
+    text-align: center;
+    margin: 160px auto 0;
+    color: #fff;
+}
+
+
+    .watchword{
+        width: 100%;
+        margin: 50px 0;
+    }
+    .watchword > p{
+        font-size: 1rem;
+    }
+    .watchword > hr{
+        width: 50%;
+    }
+
+
+
+    .triad-container{
+        display: block;
+        width: 100%;
+        margin: 50px 0 0;
+    }
+    .triads{
+        margin-bottom: 30px;
+    }
+    .triads > img{
+        width: 100%;
+    }
+    .triads > h3{
+        font-size: 1.56rem;
+    }
+    .triads > p{
+        font-size: 1.50rem;
+    }
+    .rcc{
+        font-size: 1.25rem;
+    }
+    .triads > button{
+        padding: 8px 12px;
+        margin-top: 5px;
+    }
+
+
+    .project-container{
+        width: 100%;
+    }
+    .project{
+        top: 50%;
+        left: 15%;
+    }
+    .project > h4{
+        font-size: 2rem;
+    }
+    .project > button{
+        padding: 8px 12px;
+        font-size: 1rem;
+        margin-left: 50px;
+    }
+
+
+
+    .join-container{
+        width: 100%;
+        height: 280px;
+        position: relative;
+    }
+    .join{
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    .join > h5{
+        font-size: 2.18rem;
+    }
+    .join > p{
+        font-size: 1.37rem;
+    }
+    .join > button{
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+
+
+
+
+    .certificates-container{
+        width: 100%;
+        background-color: rgb(134, 204, 204, 0.4);
+        justify-content:center;
+    }
+    .certificates-container img{
+        height: 50px;
+    }
+
+
+    /* FOOTER SECTION */
+    .footer-container{
+        height: 900px;
+        width: 100%;
+        display: block;
+        padding: 50px;
+    }
+    .foots{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-info{
+        position: relative;
+        bottom:380px;
+    }
+    .footer-info > img{
+        width: 180px;
+        position: relative;
+        top: 220px;
+        left: 0;
+    }
+    
+    .footer-info > p{
+        position: relative;
+        top: 65px;
+    }
+    
+    .footer-contact{
+        margin-left: 0;
+        margin-top: -250px;
+    }
+    .footer-contact > h6{
+        font-size: 0.87rem;
+    }
+    
+    
+    .footer-nav > h3{
+        margin-top: 100px;
+    }
+
+
+    .copyright{
+        padding: 0;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .copyright > :nth-child(1){
+        margin-top: 15px;
+    }
+    .copyright > :nth-child(2), .copyright > :last-child{
+        margin-top: -5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------REQUEST QUOTE WEBPAGE BEGINS HERE----------------------------------------- */
+.request-container{
+    margin-top: 50px;
+    height: 415px;
+    background: url(royal\ crown\ 8.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.request-text{
+    position: absolute;
+    color: white;
+    top: 150px;
+    left: 40%;
+    font-family:'Courier New', Courier, monospace;
+}
+.request-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(8, 39, 139, 0.5);
+}
+.request{
+    width: 55%;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--blackwhite-color);
+}
+
+
+
+/* REQUEST QUOTE FORM SECTION */
+.form-container{
+    margin-bottom: 50px;
+}
+#form-bg{
+    height: 530px;
+    width: 100%;
+    position: absolute;
+    top: 780px;
+    opacity: 0.1;
+    z-index: -1;
+}
+.quote{
+    width: 55%;
+    margin: 0 auto;
+}
+.quote > p{
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.12rem;
+    color: var(--bluewhite-color);
+}
+.name{
+    display: flex;
+}
+.firstname{
+    margin-right: 15px;
+}
+.names{
+    width: 363px;
+    height: 40px;
+    border: 1px solid blue;
+}
+.firstname >p, .lastname > p{
+    margin-top: 10px;
+    color: var(--blackwhite-color);
+}
+
+.other-inputs p{
+    margin: 20px 0 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.12rem;
+    color: var(--bluewhite-color);
+}
+#company{
+    color: red;
+}
+.other-inputs input{
+    border: 1px solid blue;
+    width: 100%;
+    height: 40px;
+}
+.other-inputs > #quote-area{
+    border: 1px solid blue;
+    background: url(royalcrown\ 0.png) no-repeat right bottom;
+    background-size: contain;
+}
+.submit{
+    margin-top: 20px;
+}
+.submit > button{
+    padding: 8px 50px;
+    background-color: var(--bluewhite-color);
+    color: var(--whiteblue-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-left: 300px;
+}
+.submit > button:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+/* MOBILE SCREEN FOR REQUEST QUOTE PAGE */
+@media screen and (max-width:600px) {
+    .request-container{
+        margin-top: 0;
+        height: 300px;
+        width: 100%;
+    }
+    .request-text{
+        top: 150px;
+        left: 70px;
+        font-size: 0.75rem;
+    }
+    .request{
+        width: 50%;
+        text-align: justify;
+        margin: 50px 0;
+        font-size: 1rem;
+    }
+
+
+
+
+
+
+    .form-container{
+        width: 50%;
+    }
+    #form-bg{
+        height: 300px;
+        width:50%;
+        top: 770px;
+        opacity: 0.2;
+    }
+    .quote{
+        width: 100%;
+    }
+    .name{
+        flex-wrap: wrap;
+    }
+    .firstname{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .names{
+        width: 290px;
+        width: 100%;
+    }
+    .firstname >p, .lastname > p{
+        margin-top: 0;
+    }
+    
+    .other-inputs > #quote-area{
+        width: 100%;
+    }
+    .submit > button{
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================================ABOUT US WEBPAGE=================================================== */
+.about-hero{
+    margin-top: 100px;
+    height: 450px;
+    background: url(royal\ crown\ 4.jpg) no-repeat center;
+    background-size: cover;
+}
+.about-hero-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 98, 151, 0.5);
+}
+.about-hero-overlay h1{
+    position: absolute;
+    top: 350px;
+    left: 550px;
+    color: white;
+}
+
+
+
+.about-hero-header{
+    margin: 50px 0 10px 7.5%;
+    color: var(--bluewhite-color);
+}
+.about-hero-header hr{
+    width: 100px;
+    padding-top: 3px;
+    border-radius: 50px;
+    background-color: var(--bluewhite-color);
+}
+.about-hero-container{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+.about-hero-container > .about-hero-paragraph{
+    width: 100%;
+}
+.about-hero-container > .about-hero-paragraph p{
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--blackwhite-color);
+}
+#hero-company{
+    font-weight: bold;
+}
+.about-hero-container > .about-hero-img{
+    width: 50%
+}
+.about-hero-container > .about-hero-img > img{
+    width: 100%;
+}
+
+
+.before-statement{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.before-statement img{
+    height: 350px;
+    width: 500px;
+}
+.before-statement2{
+    width: 100%;
+    display: flex;
+}
+.before-statement2 img{
+    height: 250px;
+    width: 32.7vw;
+}
+
+.mission{
+    background-color: rgb(235, 226, 215);
+    background-color: var(--mission-color);
+    text-align: center;
+    margin: 50px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.mission h3{
+    color: var(--bluewhite-color);
+    font-size: 1.68rem;
+    padding: 70px 0 5px;
+}
+.mission hr{
+    width: 100px;
+    padding: 2px;
+    border-radius: 50px;
+    margin: 5px auto 0;
+    background-color: var(--bluewhite-color);
+}
+.mission p{
+    width: 80%;
+    margin: auto;
+    padding: 40px 0 100px;
+    color: var(--blackwhite-color);
+    font-size: 1.25rem;
+}
+
+
+.vision-container{
+    width: 90%;
+    margin: 0 auto 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.vision-container h3{
+    color: var(--bluewhite-color);
+    font-size: 1.68rem;
+}
+.vision-container hr{
+    width: 50px;
+    margin: 10px 0;
+    padding-top: 2px;
+    background-color: var(--bluewhite-color);
+}
+.vision{
+    display: flex;
+}
+.vision-text{
+    width: 60%;
+}
+.vision-text p{
+    line-height: 2;
+    color: var(--blackwhite-color);
+    font-size: 1.25rem;
+}
+.rcc-bold{
+    font-weight: bold;
+}
+.vision-img{
+    width: 40%;
+}
+.vision-img img{
+    height: 400px;
+    width: 100%;
+}
+
+
+
+/* ----------------------------------------------------MOBILE SCREEN VIEW FOR ABOUT US WEBPAGE ---------------------------------------*/
+@media screen and (max-width:600px) {
+    .about-hero{
+        margin-top: 0;
+        height: 100vh;
+        width: 100%;
+    }
+    .about-hero-overlay h1{
+        left: 100px;
+        color: white;
+        font-size: 2.18rem;
+    }
+
+
+
+    .about-hero-header{
+        margin: 50px 0 20px;
+    }
+    .about-hero-header h2{
+        font-size: 1.25rem;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    .about-hero-header hr{
+        padding-top: 2px;
+        margin: auto;
+    }
+    .about-hero-container{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .about-hero-container > .about-hero-paragraph p{
+        font-size: 1.5rem;
+        text-align: justify;
+}
+    .about-hero-container > .about-hero-img{
+        width: 100%
+    }
+    .about-hero-container > .about-hero-img > img{
+        height: 200px;
+    }
+
+
+    .before-statement{
+        width: 100%;
+        margin: 50px 0;
+        display: block;
+    }
+    .before-statement img{
+        width: 100%;
+    }
+    .before-statement2{
+        display: block;
+    }
+    .before-statement2 img{
+        width: 100%;
+    }
+
+
+
+    .mission{
+        text-align: justify;
+        margin: 0 0 50px;
+    }
+    .mission h3{
+        font-size: 1.56rem;
+        padding: 50px 0 5px;
+        text-align: center;
+    }
+    .mission p{
+        width: 100%;
+        padding: 40px 0;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    
+    
+    .vision-container{
+        width: 100%;
+        margin: 0 auto 50px;
+    }
+    .vision-container h3{
+        text-align: center;
+    }
+    .vision-container hr{
+        margin: 10px auto;
+    }
+    .vision{
+        display: block;
+    }
+    .vision-text{
+        width: 100%;
+    }
+    .vision-text p{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    .vision-img{
+        width: 100%;
+    }
+    .vision-img img{
+        height: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================SERVICES WEBPAGE================================================== */
+.about-hero{
+    margin-top: 100px;
+    height: 450px;
+    background: url(royal\ crown\ 1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+.service-explain{
+    width: 90%;
+    margin: 50px auto 100px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--blackwhite-color);
+}
+.rcc-services{
+    font-weight: bold;
+}
+
+
+/* DESIGN SECTION */
+.design-container{
+    background-color: var(--servicebody-color);
+}
+.design-container h2{
+    color: var(--bluewhite-color);
+    padding: 100px 0 0 50px;
+}
+.design-container hr{
+    background-color: var(--bluewhite-color);
+    width: 200px;
+    padding: 1px;
+    border: none;
+    margin: 0 0 20px 50px;
+}
+.design{
+    display: flex;
+    padding: 0 50px 100px;
+}
+.design-text p{
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    color: var(--blackwhite-color);
+}
+.design-img img{
+    width: 400px;
+}
+
+
+/* ERECTION SECTION */
+.erection-heading{
+    padding: 100px 0 20px;
+    margin-left: 500px;
+}
+.erection-heading h2{
+    color: var(--bluewhite-color);
+}
+.erection-heading hr{
+    background-color: var(--bluewhite-color);
+    width: 200px;
+    padding: 1px;
+    border: none;
+}
+.erection{
+    display: flex;
+    flex-flow: row-reverse;
+    padding: 0 50px 100px;
+}
+.erection-text {
+    margin-left: 20px;
+}
+.erection-text p{
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    text-align: justify;
+    color: var(--blackwhite-color);
+}
+.erection-img img{
+    width: 400px;
+}
+
+
+/* PRODUCTION SECTION */
+.production-container{
+    background-color: var(--servicebody-color);
+}
+.production-container h2{
+    color: var(--bluewhite-color);
+    padding: 100px 0 0 50px;
+}
+.production-container hr{
+    background-color: var(--bluewhite-color);
+    width: 200px;
+    padding: 1px;
+    border: none;
+    margin: 0 0 20px 50px;
+}
+.production{
+    display: flex;
+    padding: 0 50px 100px;
+}
+.production-text p{
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    color: var(--blackwhite-color);
+}
+.production-img img{
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------MOBILE SCREEN FOR SERVICE WEBPAGE---------------------------------------- */
+@media screen and (max-width:600px){
+    .about-hero{
+        margin-top: 0;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    
+    .service-explain{
+        width: 100%;
+        margin: 50px 0 100px;
+    }
+    .service-explain p{
+        font-size: 1.25rem;
+    }
+
+
+    /* DESIGN SECTION */
+.design-container{
+    width: 100%;
+}
+.design-container h2{
+    padding: 50px 0 0;
+    text-align: center;
+}
+.design-container hr{
+    width: 50px;
+    margin: 0 auto 20px;
+}
+.design{
+    display: block;
+    padding: 0 0 0;
+}
+.design-text :last-child{
+    margin-bottom: 20px;
+}
+.design-img img{
+    width: 100%;
+}
+
+
+
+/* ERECTION SECTION */
+.erection-heading{
+    padding: 30px 0 20px;
+    margin-left: 0;
+}
+.erection-heading h2{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+.erection-heading hr{
+    width: 70px;
+    margin: 0 auto;
+}
+.erection{
+    display: block;
+    padding: 0;
+}
+.erection-text{
+    margin-left: 0;
+}
+.erection-text p{
+    font-size: 1.25rem;/
+}
+.erection-img img{
+    width: 100%;
+}
+
+
+
+/* PRODUCTION SECTION */
+.production-container{
+    width: 100%;
+}
+.production-container h2{
+    padding: 50px 0 0;
+    text-align: center;
+}
+.production-container hr{
+    width: 100px;
+    margin: 0 auto 20px;
+}
+.production{
+    display: block;
+    padding: 0 0;
+}
+.production-text p{
+    text-align: justify;
+    font-size: 1.25rem;
+}
+.production-img img{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================================CONTACT US WEBPAGE BEGINS HERE============================================= */
+/* THE CONTACT FORM SECTION IS COPIED FROM THE REQUEST CODE FORM. HOWEVER AN H3 HEADING IS ADDED TO SPECIFIED THAT IT IS CONTAcT FORM. THIS IS EFECTED IN .quote > h3 code line below */
+.address-container{
+    background-color: var(--contactaddress-color);
+    padding: 30px 20px 1px;
+    width: 55%;
+    margin: 50px auto 0;
+}
+.addresses{
+    margin-bottom: 50px;
+}
+.addresses h3{
+    color: var(--bluewhite-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.addresses h3 i{
+    margin-right: 5px;
+}
+.addresses p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    color: var(--blackwhite-color);
+}
+
+
+
+
+
+.quote h3{
+    color: var(--bluewhite-color);
+    padding: 30px 0 20px;
+}
+
+
+
+
+/* --------------------------------------------------------------MOBILE SCREEN FOR CONTACT U WEBPAGE------------------------------ */
+@media screen and (max-width:600px){
+    .address-container{
+        padding: 0;
+        width: 100%;
+        margin: 50px 0 0;
+    }
+    .addresses{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .addresses h3{
+        font-weight: normal;
+    }
+    .addresses h3 i{
+        margin-right: 5px;
+    }
+    .addresses p{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        line-height: 1.5;
+        font-size: 0.8rem;
+    }   
+}

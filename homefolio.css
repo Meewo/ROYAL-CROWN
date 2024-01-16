@@ -1,0 +1,640 @@
+body{
+    background-color: black;
+    font-family:Georgia, Times, serif Arial, Helvetica, sans-serif;
+}
+.body-container{
+    display: flex;
+    width: 1100px;
+}
+.h2nav{
+    color: azure;
+    margin-top: 100px;
+}
+.h2nav1{
+    color: azure;
+    margin-top: 0;
+}
+.hrnav{
+    width: 120px;
+    margin-left: 0;
+    margin-top: -10px;
+    opacity: 0.5;
+}
+#h3main{
+    padding: 24px 0 0;
+    color: lightgrey;
+}
+nav{
+    background-color: #222;
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    z-index: 1;
+}
+
+#navimg{
+    width: 100%;
+    height: auto;
+    opacity: 0.8;   
+}
+#navimg:hover{
+    opacity: 1;
+}
+#navlogo{
+    width: 100%;
+    height: 125px;
+    transition: width 2s;
+}
+#navlogo:hover{
+    width: 238px;
+    height: 110px;
+    transform: rotate(360deg);
+    border: 5px solid blue;
+}
+nav > #homenav{
+    list-style-type: none;
+    padding: 0;
+}
+nav > #homenav > li{
+    width: 100%;
+}
+nav > #homenav > li > a{
+    display: block;
+    text-decoration: none;   
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 18px 20px;
+}
+nav > #homenav > li > a > .fa-solid{
+    color: white;
+    margin-bottom: 30px;
+}
+nav > #homenav > li > a.active {
+    background-color: #4CAF50;
+    color: fuchsia;
+}
+nav > #homenav > li > a:hover:not(.active) {
+    background-color: black;
+}
+.nav-base-links{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-base-links > a{
+    color: gray;
+}
+.nav-base-links > a:hover{
+    opacity: 0.8;
+    color: whitesmoke;
+}
+
+
+/* mobile screen nav*/
+.mobile-menu{
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+.mobile-menu > div{
+    display: flex;
+    position: fixed;
+    justify-content:space-evenly;
+    width: 100%;
+    background-color: rgb(24, 24, 26);
+    margin-top: -25px;
+    padding: 14px 0;
+    z-index: 1;
+}
+.mobile-menu > div > a{
+    margin: auto;
+    color: grey;
+    text-decoration: none;
+    font-size: small;
+
+}
+.mobile-menu > div > a:link, .mobile-menu > div > a:visited{
+    color: rgb(192, 189, 197);
+    padding: 10px 40px;
+    margin: -15px 0;
+    text-align: center;
+    display: inline-block;
+}
+.mobile-menu > div > a:hover{
+    color: rgb(66, 60, 60);
+    background-color: grey;
+}
+.mobile-menu > div > a:active{
+    color: yellow;
+}
+
+
+/* Body section begins */
+#main{
+    /* margin-left: 240px; */
+    /* margin-right: 120px; */
+    /* width: 1100px; */
+    width: 100%;
+    position: relative;
+    left: 240px;
+    margin-right: 120px;
+}
+
+/* Header section begins */
+#homeheader{
+    /* background: linear-gradient(to right, #00093c, #023b05); */
+    /* background-color: rgb(0, 139, 139, 0.2); */
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: 'Sacramento', cursive; */
+    /* margin: -50px -127px 0 -127px; */
+    /* margin-right: -136px; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background: url(coding3.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    left: 120px;
+    margin-left: -240px;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    /* background-color: #fff; */
+    width: 100%;
+    height: 100%;
+}
+#homeheader > .homeheader-text{
+    margin: 150px 0 0 100px;
+    color: white;
+    z-index: 7;
+}
+#homeheader > .homeheader-text > h1{
+    font-size: 40px;
+    padding-top: 70px;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+#homeheader > .homeheader-text > p{
+    margin-top: -5px;
+    color: rgb(175, 179, 194);
+}
+.homeheader-img > #imgheader{
+    height: 700px;
+    /* width: 600px; */
+    opacity: 0.8;
+    z-index: 7;
+
+}
+.homeheader-img > #imgheader-mobile{
+    display: none;
+}
+/* Header section ends */
+
+
+
+/* ABOUT SECTION */
+.section{
+    margin-top: 50px;
+}
+.section > p{
+        color: rgb(175, 179, 194);
+}
+
+/* About Skill */
+.skill-container{
+    margin-bottom: 50px;
+}
+.skillwhite{
+    background-color: white;
+}
+.skillgray{
+    background-color: darkgrey;
+    height: 28px;
+    width: 95%;
+}
+.skillgray2{
+    background-color: darkgrey;
+    height: 28px;
+     width: 85%;
+}
+.skillgray3{
+    background-color: darkgrey;
+    height: 28px;
+     width: 80%;
+}
+
+/* About Resume*/
+.resume{
+    overflow: auto;
+    display: flex;
+    background-color:rgb(230, 225, 235);
+    justify-content: center;
+}
+.resumetext{
+    margin: 0 8px;
+    padding: 30px 60px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+.resumenumbers{
+    font-size: larger;
+}
+#resumedwlnd{
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    border: none;
+}
+#resumedwlnd:hover{
+    background-color: lightgrey;
+}
+
+/* About Price */
+.Pricecontainer{
+    display: flex;
+}
+.basicprice{
+   margin: 0 8px 0 0;
+   width: 100%;
+}
+.proprice{
+    margin: 0 0 0 8px;
+    width: 100%;
+}
+.pricelist{
+    list-style-type: none;
+    background-color: lightgrey;
+    color: rgb(223, 209, 209);
+    opacity: 0.7;
+    text-align: center;
+}
+.pricelist:hover{
+   opacity: 1;
+    background-color: white;
+}
+.priceshead{
+    background-color: rgb(56, 56, 59);
+    font-size: x-large;
+    padding: 32px;
+    margin-left: -40px;
+}
+.prices{
+    color: black;
+    padding: 16px;
+    border-bottom: 1px solid grey;
+    margin-left: -40px;
+}
+.pricecost{
+    opacity: 0.5;
+}
+.listsign{
+    background-color: rgb(233, 234, 241);
+    padding: 24px;
+    margin-left: -40px;
+}
+.listsignup{
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+}
+.listsignup:hover{
+    background-color: black;
+    color: white;
+}
+
+/* About Reputation*/
+
+.rating{
+    color: rgb(233, 219, 241);
+}
+.imgrating{
+    width: 80px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 25px;
+    opacity: 1;
+}
+.ratername{
+    font-size: large;
+    margin-right: 25px;
+}
+.prates{
+    color: lightgrey;
+    font-family: sacramento, cursive;
+}
+.ratername-mobile{
+    display: none;
+}
+/* About Section Ends */
+
+
+/* MY DESIGN SECTION*/
+.designsphotos{
+    background: linear-gradient(to right, #00093c, #2d0b00);
+}
+.mydesigns > img{
+    width: 191px;
+    margin: 0;
+}
+#design1, #design2, #design3, #design4, #design5, #design6, #design7{
+    transition: width 2s;
+}
+#design1:hover, #design2:hover, #design4:hover,  #design5:hover,  #design6:hover,  #design7:hover{
+    width: 250px;
+    height: 350px;
+    transform: rotate(360deg);
+    border: 5px solid blue;
+}
+#design3:hover{
+    width: 350px;
+    height: 350px;
+    transform: rotate(360deg);
+    border: 5px solid blue;
+}
+/*Design Ends*/
+
+
+
+/* CONTACT SECTION*/
+.mycontact{
+    color: rgb(150, 142, 142);
+}
+.mycontact > p > i{
+    margin: 0 30px 30px 0;
+    color: white;
+}
+#enugu{
+    margin-left: 8px;
+}
+/* #pemailchat{
+    color: rgb(150, 142, 142);
+    font-size: 15px;
+} */
+legend{
+    color: rgb(150, 142, 142);
+}
+.emailchat{
+    padding: 10px 0;
+    width: 100%;
+    font-size: 15px;
+}
+#emailchat-textarea{
+    height: 100px;
+    padding: 0;
+    font-size: 17px;
+}
+#submitemailchat{
+    padding: 16px 30px;
+    border: none;
+    font-size: 15px;
+}
+#submitemailchat:hover{
+    background-color: darkgrey;
+}
+/* Contact Section Ends*/
+
+/* FOOTER SECTION*/
+#pagefooter{
+    color: grey;
+    padding: 64px 0;
+    margin-top: 120px;
+}
+.footer-contents{
+    display: flex;
+}
+.footer-links > .footer-logo-links{
+    color: grey;
+}
+.footer-links > .footer-logo-links :hover{
+    opacity: 0.5;
+}
+#footer-logo-img{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 95%;
+}
+#pagefooter > p{
+    font-size: medium;
+    text-align: center;
+}
+#pagefooter > p > #footer-link{
+    color: grey;
+}
+#pagefooter > p > #footer-link:hover{
+    color: blue;
+}
+
+/* Footer Section End */
+
+/* Body Section Ends */
+
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+@media screen and (max-width:600px){
+    body{
+        background-color: red;
+    }
+    .body-container{
+        width: 100%;
+        background-color: blue;
+    }
+    #h3main{
+        font-size: 1.56rem;
+    }
+    nav{display: none;
+    }
+    .mobile-menu{
+        display: block;
+        position: fixed;
+    }
+    #main{
+        width: 100%;
+        position: relative;
+        left: 0;
+        margin-right: 0;
+    }
+    #homeheader{
+        width: 100%;
+        height: 700px ;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #homeheader > .homeheader-text{
+        /* margin: 0 auto; */
+        position: absolute;
+        top: 350px;
+        left: 20px;
+    }
+    #homeheader > .homeheader-text > h1{
+        padding-top: 0;
+        line-height: 1;
+        /* font-family: 'Sacramento', cursive; */
+        font-size: 35px;
+        font-weight: 100;
+    }
+    #homeheader > .homeheader-text > p{
+        margin-top: -20px;
+        color: cyan;
+        font-family: 'Sacramento', cursive;
+        font-size: 14px;
+    }
+    .homeheader-img > #imgheader{
+        height: 100%;
+        position: absolute;
+        left: 10px;
+        z-index: 1;
+    }
+
+
+
+    /* ABOUT SECTION */
+    .section{
+        width:70%;
+    }
+    .section > p{
+            color: rgb(175, 179, 194);
+            width: 100%;
+            line-height: 1.5;
+    }
+    
+    /* About Skill */
+    .skill-container{
+        width: 100%;
+    }
+    
+    /* About Resume*/
+    .resume{
+        width: 100%;
+        display: block;
+    }
+    #resumedwlnd{
+        width: 100%;
+        margin-top: -5px;
+        border-radius: 20px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+    
+    /* About Price */
+    .Pricecontainer{
+        display: block;
+        width: 100%;
+    }
+    .basicprice{
+       margin: 0;
+    }
+    .proprice{
+        margin: 0;
+    }
+    
+    /* About Reputation*/
+    .rating{
+        width: 100%;
+    }
+    .bulle, .baggy{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-family: sacramento, cursive;
+    }
+    .bulle{
+        margin-bottom: 30px;
+    }
+    .imgrating{
+        margin: 0 auto;
+    }
+    .prates{
+        display: none;
+    }
+    .ratername-mobile{
+        display: block;
+        font-size: 1rem;
+    }
+    .bulle > :last-child, .baggy > :last-child{
+        text-align: center;
+        font-size: 12px;
+        font-family: sacramento, cursive;
+        margin-top: -5px;
+        margin: -5px auto 0;
+    }
+
+
+
+    .designsphotos{
+        display: block;
+        width: 72%;
+    }
+    .mydesigns > img{
+        width: 100%;
+    }
+    #design1, #design2, #design3, #design4, #design5, #design6, #design7{
+        transition: none;
+    }
+    #design1:hover, #design2:hover, #design4:hover,  #design5:hover,  #design6:hover,  #design7:hover{
+        height: auto;
+        width: 100%;
+        transform: none;
+        border: none;
+    }
+
+
+   
+    
+
+    /* CONTACT SECTION */
+    .mycontact{
+        width: 100%;
+    }
+    .mycontact > p > i{
+        margin: 0 10px 30px 0;
+    }
+    .mobile-contact{
+        display: none;
+    }
+    
+
+    form{
+        width: 72%;
+    }
+    .emailchat{
+        font-size: 1rem;
+    }
+    #emailchat-textarea{
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    #submitemailchat{
+        width: 100%;
+        padding: 5px ;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    #submitemailchat:hover{
+        background-color: darkgrey;
+    }
+
+
+
+  /* FOOTER SECTION*/
+#pagefooter{
+    padding: 100px 0 20px;
+    margin-top: 0;
+    width: 72%;
+}
+#footer-logo-img{
+    width: 50px;
+    left: 250px;
+    top: 98.36%;
+}
+#pagefooter > p{
+    font-size: 15px;
+}
+}

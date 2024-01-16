@@ -1,0 +1,36 @@
+/* THE CONTACT FORM SECTION IS COPIED FROM THE REQUEST CODE FORM. HOWEVER AN H3 HEADING IS ADDED TO SPECIFIED THAT IT IS CONTAcT FORM. THIS IS EFECTED IN .quote > h3 code line below */
+/* ONE OF THE SECOND HEADER LINK IS BEING MODIFOED AS WELL */
+
+
+.second-header-links :nth-child(1){
+    padding: 8px 20px;
+}
+
+.address-container{
+    padding: 30px 20px 1px;
+    width: 55%;
+    margin: 50px auto 0;
+}
+.addresses{
+    margin-bottom: 50px;
+}
+.addresses h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+.addresses h3 i{
+    margin-right: 5px;
+}
+.addresses p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+}
+
+
+
+
+
+.quote h3{
+    padding: 30px 0 20px;
+}
